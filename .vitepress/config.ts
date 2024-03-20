@@ -95,5 +95,8 @@ export default defineConfig({
       next: '下一页',
     },
     externalLinkIcon: true,
+    search: {
+      provider: 'local',
+    },
   },
 });
