@@ -3,7 +3,19 @@
   --vp-c-brand-2: #747bff;
 }
 
+/* medium 风格的图片放大功能 */
 .medium-zoom-overlay,
 .medium-zoom-image {
   z-index: 9999 !important;
+}
+
+/* 脚注样式 */
+footnote-backref,
+.footnote-ref a {
+  padding-right: unset !important;
+}
+
+.footnote-item {
+  font-style: italic;
+  font-weight: bold;
 }

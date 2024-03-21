@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress';
 import head, { description } from './head';
+import footnote from 'markdown-it-footnote';
 
 import nav from './nav';
 import sidebar from './sidebar';
@@ -30,6 +31,25 @@ export default defineConfig({
     externalLinkIcon: true,
     search: {
       provider: 'local',
+    },
+  },
+  markdown: {
+    lineNumbers: true, // 显示代码块行号
+    config: (md) => {
+      md.use(footnote);
+      // md.renderer.rules.footnote_anchor = function render_footnote_anchor(
+      //   tokens,
+      //   idx,
+      //   options,
+      //   env,
+      //   slf
+      // ) {
+      //   let id = slf.rules.footnote_anchor_name?.(tokens, idx, options, env, slf);
+      //   if (tokens[idx].meta.subId > 0) {
+      //     id += ':' + tokens[idx].meta.subId;
+      //   }
+      //   return ' <a href="#fnref' + id + '" class="footnote-backref">👈🏻</a>';
+      // };
     },
   },
 });
