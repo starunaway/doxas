@@ -26,7 +26,7 @@ const nav: DefaultTheme.NavItem[] = [
   },
   {
     text: '归档',
-    link: '/archive/',
+    link: '/archive/git',
   },
 ];
 
