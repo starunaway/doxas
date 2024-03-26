@@ -17,12 +17,8 @@ const nav: DefaultTheme.NavItem[] = [
   },
 
   {
-    text: 'Dropdown Menu',
-    items: [
-      { text: 'Item A', link: '/item-1' },
-      { text: 'Item B', link: '/item-2', rel: 'noopener' },
-      { text: 'Item C', link: '/item-3' },
-    ],
+    text: '算法',
+    link: '/algorithm/',
   },
   {
     text: '归档',

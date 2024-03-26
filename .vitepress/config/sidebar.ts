@@ -16,6 +16,16 @@ const sidebar: DefaultTheme.Sidebar = {
       },
     ],
   },
+
+  '/algorithm/': {
+    base: '/algorithm/',
+    items: [
+      {
+        text: 'LRU',
+        link: 'lru',
+      },
+    ],
+  },
 };
 
 export default sidebar;
